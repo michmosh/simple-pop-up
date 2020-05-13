@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui.min.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+       <div class="container">
+           <div id="modal-overlay" class="pop-up-overlay hide">
+            <div id="modal-window" class="pop-up-window">
+                <div onclick="modal.hideModal()" class="modal-close-button close">X</div>
+                <div id="modal-content" class="modal-content"></div>
+            </div>
+           </div>
+           <div id="open-button" onclick="modal.openPopUp()" class="btn btn-primary open-button">open</div>
+       </div>
+       <script src="script.js"></script>
+    </body>
+</html>

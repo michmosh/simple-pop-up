@@ -1,0 +1,59 @@
+.container{
+    display:flex;
+    justify-content: center;
+    height: 100%;
+}
+.container div{
+    align-self: center;
+}
+.container .pop-up-overlay{
+    width:100%;
+    height:100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+.container .pop-up-window{
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid black;
+    width: 50%;
+    height:50%;
+}
+.container .pop-up-window .modal-content{
+    display: flex;
+    justify-content: center;
+}
+
+.show{
+    opacity : 1;
+    animation:fadeIn 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.hide{
+    opacity: 0;
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { 
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { 
+        opacity: 0;
+        visibility: hidden;
+    }
+}
